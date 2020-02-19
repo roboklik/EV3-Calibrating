@@ -16,7 +16,7 @@ brick.buttonDown.onEvent(ButtonEvent.Pressed, function () {
     brick.showValue("dark", sensors.color2.threshold(Light.Dark), 2)
     brick.showValue("bright", sensors.color2.threshold(Light.Bright), 2)
     forever(function () {
-        brick.showValue("reflected light", sensors.color3.light(LightIntensityMode.Reflected), 1)
+        brick.showValue("reflected light", sensors.color2.light(LightIntensityMode.Reflected), 1)
     })
 
 })

@@ -13,8 +13,8 @@ brick.buttonDown.onEvent(ButtonEvent.Pressed, function () {
     console.log("press ENTER when ready")
     brick.buttonEnter.pauseUntil(ButtonEvent.Pressed)
     sensors.color2.calibrateLight(LightIntensityMode.Reflected)
-    brick.showValue("dark", sensors.color3.threshold(Light.Dark), 2)
-    brick.showValue("bright", sensors.color3.threshold(Light.Bright), 2)
+    brick.showValue("dark", sensors.color2.threshold(Light.Dark), 2)
+    brick.showValue("bright", sensors.color2.threshold(Light.Bright), 2)
     forever(function () {
         brick.showValue("reflected light", sensors.color3.light(LightIntensityMode.Reflected), 1)
     })
